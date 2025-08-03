@@ -530,6 +530,7 @@ p.overlay{
 
 .modal{
     position: absolute;
+    margin-bottom: 16px;
     top: 50%;
     left: 50%;
     width: 408px;
@@ -597,9 +598,9 @@ border: none;
     color: #8E8F99;
     font-size: 12px;
     font-weight: 400;
-    line-height: 14px;
     letter-spacing: 0.48px;
     margin-bottom: 4px;
+    line-height: 1.17;
 }
 
 .modal-form-box{
@@ -636,11 +637,12 @@ border: none;
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     left: 16px;
+    
 }
 
 .modal-form-input:focus + .modal-form-icon{
     fill: #4d5ae5;
-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .modal-form-message{
@@ -689,6 +691,7 @@ line-height: 1.33333;
 text-decoration: underline;
 text-decoration-skip-ink: none;
 color: #4d5ae5;
+
 }
 
 
@@ -701,16 +704,17 @@ color: #4d5ae5;
     margin-right: 8px;
     align-items: center;
     justify-content: center;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: border-color, 
-    background-color;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
+    fill: transparent;
+    
 }
 
 .checkbox:checked+.modal-form-agreement-field>.modal-form-agreement-checkbox {
     border-color: transparent;
     background-color: #404bbf;
-    fill: #ffff;
+    fill: #F4F4FD;
+    border: none;
 }
 
 .btn-accent {
