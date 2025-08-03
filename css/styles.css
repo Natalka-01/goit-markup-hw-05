@@ -691,15 +691,103 @@ color: #4d5ae5;
 }
 
 .modal-form-agreement-checkbox{
+    display: inline-flex;
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     height: 16px;
     width: 16px;
     margin-right: 8px;
+    align-items: center;
+    justify-content: center;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: border-color, 
+    background-color;
+    cursor: pointer;
 }
 
 .checkbox:checked+.modal-form-agreement-field>.modal-form-agreement-checkbox {
     border-color: transparent;
     background-color: #404bbf;
     fill: #ffff;
+}
+
+.btn-accent {
+    width: 169px;
+    height: 56px;
+    background-color: #4d5ae5;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-subscribe-title {
+    color: var(--footer-text-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-top: 16px;
+}
+
+.footer-subscribe-form {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-subscribe-input {
+    width: 264px;
+    height: 40px;
+    padding: 8px 16px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    background-color: transparent;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.48px;
+}
+
+.footer-subscribe-input::placeholder {
+    color:  #ffffff;
+}
+
+.footer-subscribe-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 24px;
+    height: 40px;
+    background-color: #4d5ae5;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-subscribe-btn:hover,
+.footer-subscribe-btn:focus {
+    background-color: #404bbf;
+}
+
+.footer-subscribe-icon {
+    fill: #ffffff;
 }

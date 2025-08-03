@@ -560,9 +560,29 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscribe">
+  <p class="footer-subscribe-title">Subscribe</p>
+  <form class="footer-subscribe-form" name="subscribe_form">
+    <label class="footer-subscribe-label">
+      <input
+        class="footer-subscribe-input"
+        type="email"
+        name="user_email"
+        placeholder="E-mail"
+        required
+      />
+    </label>
+    <button class="footer-subscribe-btn" type="submit">
+      Subscribe
+      <svg class="footer-subscribe-icon" width="24" height="20">
+        <use href="./images/icons.svg#icon-icon-send"></use>
+      </svg>
+    </button>
+  </form>
+</div>
       </div>
     </footer>
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button class="modal-btn" type="button" aria-label="Modal close button">
           <svg class="modal-btn-icon" width="8" height="8">
@@ -660,7 +680,7 @@
             </label>
           </div>
 
-          <button class="btn btn-accent" type="submit" disabled>Send</button>
+          <button class="btn btn-accent" type="submit" >Send</button>
         </form>
       </div>
       </div>
